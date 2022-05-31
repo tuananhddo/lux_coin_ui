@@ -6,7 +6,7 @@ import {Link} from "@mui/material";
 
 export const Wrapper = styled.div`
   width: 100%;
-  background-color: #181826;
+  background-color: white;
   color: #cddbfe;
   text-align: left;
   padding: 45px 0;

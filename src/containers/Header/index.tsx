@@ -14,7 +14,6 @@ interface Props {
 function Header(props: Props): React.ReactElement {
   const { leftElement, centerElement, rightElement, styleCustom, ...rest } = props;
   return (
-    <S.Wrapper id='header'>
       <AppBars
         style={{
           ...styleCustom
@@ -24,7 +23,6 @@ function Header(props: Props): React.ReactElement {
         rightbar={rightElement ? rightElement : ''}
         {...rest}
       />
-    </S.Wrapper>
   )
 }
 

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Color from "style/color";
 import {IMG} from "assets/img/constant";
 import {Link, Paper} from "@mui/material";
-import {Row} from "../../style/DefaultStyled";
+import {Row} from "../../../../style/DefaultStyled";
 
 export const Wrapper = styled(Row)`
   width: 100%;

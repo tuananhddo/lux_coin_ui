@@ -81,9 +81,9 @@ function MixLayout(props: Props): React.ReactElement {
 
                             </div>
                         </Default>
-                        <S.StyledApp href='https://app.carswap.finance' target='_blank'>
-                            Demo App
-                        </S.StyledApp>
+                        {/*<S.StyledApp href='https://app.carswap.finance' target='_blank'>*/}
+                        {/*    Demo App*/}
+                        {/*</S.StyledApp>*/}
                         <Mobile>
                             <Btn
                                 type="ICON_BUTTON"

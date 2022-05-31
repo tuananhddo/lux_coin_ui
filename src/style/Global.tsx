@@ -29,15 +29,15 @@ const GlobalStyle = createGlobalStyle`
   src: url(${Fonts.OswaldSemiBold}) format('woff');
 }
 
-  body {
-    font-family: OswaldLight;
-    box-sizing: border-box;
-    color: ${Color.primary};
-    img {
-      height: auto;
-      max-width: 100%;
-    }
-  }
+  // body {
+  //   font-family: OswaldLight;
+  //   box-sizing: border-box;
+  //   color: ${Color.primary};
+  //   img {
+  //     height: auto;
+  //     max-width: 100%;
+  //   }
+  // }
 
   /* *{
     

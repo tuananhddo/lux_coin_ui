@@ -9,9 +9,9 @@ import Container from "@mui/material/Container";
 import {IMG} from "../../assets/img/constant";
 
 const wrapper = {
-    backgroundImage: `url(${IMG.banner})`,
+    // backgroundImage: `url(${IMG.banner})`,
     // backgroundImage: `url(${Group})`,
-    backgroundSize: "cover",
+    // backgroundSize: "auto",
     width: "100%",
     minHeight: 500,
     backgroundRepeat: "no-repeat",
@@ -38,7 +38,7 @@ function ListInfo(props) {
         },
     }
     return (
-        <div className={wrapper} id="Home">
+        <div style={wrapper} id="Home">
             <Container
                 // maxWidth="md"
                 className={container}
@@ -46,7 +46,7 @@ function ListInfo(props) {
                 <Row>
                     <Col md={6}>
                         <Title className={titleCss} noLight>
-                            <span>Welcome To CARSWAP </span>
+                            <span>Welcome To CARSWAPA </span>
                             {/* <br /> decentralized <br />
               financial infrastructure */}
                         </Title>

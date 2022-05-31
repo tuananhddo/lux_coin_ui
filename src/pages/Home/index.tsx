@@ -91,7 +91,7 @@ function HomePage(): React.ReactElement {
 
     return (<S.Wrapper>
         <BackgroundInfo/>
-        <PreSale/>
+        {/*<PreSale/>*/}
         {/*<PreSale account={account}/>*/}
         {/*<Order account={account} addrInvite={addrInvite} login={login}/>*/}
         {/*<Tokenomics/>*/}

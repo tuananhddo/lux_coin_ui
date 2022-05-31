@@ -5,7 +5,8 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import LoadingIndicator from "components/LoadingIndicator";
 import MixLayout from 'containers/MixLayout';
 import GlobalStyle from './style/Global'
-import Home from "pages/Home";
+import Home from "pagesNew/Home";
+import Header from "pagesNew/Home/tabs/Header"
 // import useEagerConnect from 'hooks/useEagerConnect'
 
 declare global {
@@ -22,7 +23,6 @@ declare global {
 
 // const renderLoader = () => <div className='loading'><img className='icon-loading' src={loading} alt='loading' /></div>;
 const renderLoader = () => <div className='loading'><LoadingIndicator/></div>;
-const R2 = () => <div className='loading'>XXX</div>;
 
 function App() {
 
@@ -33,19 +33,18 @@ function App() {
 
     return (
         <div className="App">
-            <GlobalStyle/>
+            <GlobalStyle className="globalStyle"/>
             <Router>
                 {/*<Routes>*/}
-                    <Suspense fallback={R2()}>
-                    <MixLayout>
-                      <Routes>
+                <Suspense fallback={renderLoader()}>
+                    <Routes>
                         {/*    <SecurityRoute exact path="/test" component={r2} />*/}
                         {/*    <PublicRoute exact path="/" element={R2} />*/}
                         <Route path="/" element={<Home/>}/>
-                        </Routes>
-                    </MixLayout>
+                    </Routes>
+                    {/*</MixLayout>*/}
 
-                    </Suspense>
+                </Suspense>
                 {/*</Routes>*/}
             </Router>
         </div>

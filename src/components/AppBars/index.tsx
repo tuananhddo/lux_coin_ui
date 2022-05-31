@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {AppBar, Container, Toolbar} from "@mui/material";
+import {AppBar, Container, Grid, Toolbar} from "@mui/material";
+import {Row} from "../../style/DefaultStyled";
 
 
 interface Props {
@@ -27,7 +28,7 @@ function AppBars(props: Props) {
         alignItems: 'center'
     }
 
-    const { leftbar, rightbar, centerbar, ...rest } = props;
+    const {leftbar, rightbar, centerbar, ...rest} = props;
     // const useStyles = makeStyles(() =>
     //   createStyles({
     //     root: {
@@ -67,7 +68,7 @@ function AppBars(props: Props) {
         toolbar: "",
         root: ""
     }
-    return <div className={classes.root}>
+    return <Grid item className={classes.root}>
         <AppBar variant='outlined' className={`custom`} {...rest}>
             <Container maxWidth='lg'>
                 <Toolbar className={classes.toolbar}>
@@ -83,7 +84,7 @@ function AppBars(props: Props) {
                 </Toolbar>
             </Container>
         </AppBar>
-    </div>
+    </Grid>
 }
 
 // AppBars.propTypes = {
